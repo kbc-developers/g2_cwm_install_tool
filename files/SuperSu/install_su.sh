@@ -32,3 +32,5 @@ echo 'ui_print("/system/bin/chmod 6755 /system/xbin/su");' >> /cache/recovery/ex
 echo 'run_program("/system/bin/chmod", "6755", "/system/xbin/su");' >> /cache/recovery/extendedcommand
 
 
+echo instrall SuperSu.apk
+pm install /data/local/tmp/SuperSu/eu.chainfire.supersu-193.apk
