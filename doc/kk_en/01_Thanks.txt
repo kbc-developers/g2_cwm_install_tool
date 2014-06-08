@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+* G2 Support Tool for KK
+*********************************WARNING*********************************
+This is a tool to assist to hack your Japanese G2 variant.
+
+Your warranty is now void.
+
+We are not responsible for bricked devices, dead SD cards, or any other issues that may arise from ignorance.
+Make sure to backup all partitions and keep them in a safe location.
+See the detail below to backup.
+http://android.slateblue.tk/viewtopic.php?f=23&t=137
+Don't take a damaged device to a store due to your hacks.
+If you agree, connect your device and run "runme.bat".
+
+This is only for Windows.
+We confirmed that this works on 
+ - x64 Windows 7 Pro
+ - x64 Windows 8.1 Pro
+ but might not work in some particular environments.
+
+method of modified tot is provide by Chinese foram.
+Thanks !
+**********************************************************************
+
+Enable USB debugging in developer options and connect your device.

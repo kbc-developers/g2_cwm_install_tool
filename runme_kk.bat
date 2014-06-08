@@ -1,10 +1,10 @@
 @echo off
 for /f "tokens=3 delims= " %%a in ('chcp') do set lang=%%a
-if "%lang%" == "932" (set doc="%~dp0doc\jp") else (set doc="%~dp0doc\en")
+if "%lang%" == "932" (set doc="%~dp0doc\kk_jp") else (set doc="%~dp0doc\kk_en")
 SET adb="%~dp0bin\adb.exe"
 
 mode con:cols=80 lines=40
-::type %doc%\"01_Thanks.txt"
+type %doc%\"01_Thanks.txt"
 pause
 
 %adb% shell id
@@ -20,8 +20,9 @@ echo ---------------------------------------------------------
 %adb% shell chmod 755 /data/local/tmp/su_client
 %adb% shell chmod 755 /data/local/tmp/su_server
 
-%adb% reboot
 
+type %doc%\"05_reboot.txt"
+%adb% reboot
 echo wait device bootup
 %adb% wait-for-device
 %adb% shell sleep 10
@@ -40,6 +41,7 @@ echo ---------------------------------------------------------
 %adb% shell /data/local/tmp/su_client -c "rm /system/bin/fssamond"
 %adb% shell /data/local/tmp/su_client -c "/data/local/tmp/busybox_file mount -o ro,remount /system"
 
+type %doc%\"05_reboot.txt"
 %adb% reboot
 echo ---------------------------------------------------------
 echo wait rebooot
@@ -69,6 +71,7 @@ echo ---------------------------------------------------------
 %adb% shell /data/local/tmp/su_client -c "/data/local/tmp/busybox_file mount -o ro,remount /system"
 %adb% shell /data/local/tmp/su_client -c "pm install /data/local/tmp/eu.chainfire.supersu-193.apk"
 
+type %doc%\"05_reboot.txt"
 %adb% reboot
 echo ---------------------------------------------------------
 echo wait rebooot
@@ -104,17 +107,6 @@ exit /b
 ::IF %ERRORLEVEL% neq 0 exit /b 1
 %adb% shell chmod 755 /data/local/tmp/busybox_file
 %adb% shell chmod 755 /data/local/tmp/rooting.sh
-exit /b
-
-
-::==============================================================
-:install_recovery
-CLS
-COLOR 0D
-type %doc%\"03_warning.txt"
-set /P INPUT=(N/y):  
-if "%INPUT%"=="Y" call :install_recovery_core
-if "%INPUT%"=="y" call :install_recovery_core
 exit /b
 
 ::==============================================================
