@@ -1,6 +1,5 @@
 #!/system/bin/sh
 
-chmod 755 /system/etc/install-rooting.sh
 /system/etc/install-rooting.sh&
 
 # Some apps like to run stuff from this script as well, that will 

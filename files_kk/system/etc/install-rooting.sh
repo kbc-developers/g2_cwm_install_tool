@@ -369,3 +369,8 @@ do
 
 done
 
+#dummy for mount issue
+mount -o rw,remount /system
+mount -o rw,remount /system
+mount -o ro,remount /system
+
