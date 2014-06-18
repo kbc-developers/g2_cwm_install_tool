@@ -30,7 +30,7 @@ echo wait device bootup
 echo ---------------------------------------------------------
 echo remove scan
 echo ---------------------------------------------------------
-%adb% shell /data/local/tmp/su_client -c "mount -o remount,rw /system"
+%adb% shell /data/local/tmp/su_client -c "toolbox mount -o remount,rw /system"
 %adb% shell /data/local/tmp/su_client -c "/data/local/tmp/busybox_file mount -o rw,remount /system"
 
 %adb% shell /data/local/tmp/su_client -c "rm /system/app/LGDMSClient.odex"
@@ -53,7 +53,7 @@ echo ---------------------------------------------------------
 echo ---------------------------------------------------------
 echo install supersu
 echo ---------------------------------------------------------
-%adb% shell /data/local/tmp/su_client -c "mount -o remount,rw /system"
+%adb% shell /data/local/tmp/su_client -c "toolbox mount -o remount,rw /system"
 %adb% shell /data/local/tmp/su_client -c "/data/local/tmp/busybox_file mount -o rw,remount /system"
 %adb% shell /data/local/tmp/su_client -c "cp -r /data/local/tmp/system/* /system/"
 :: workaround for copy "mount"

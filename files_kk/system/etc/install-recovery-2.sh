@@ -1,5 +1,10 @@
 #!/system/bin/sh
 
+toolbox mount -o rw,remount /system
+/system/etc/busybox_fline mount -o rw,remount /system
+/system/etc/busybox_fline mount -o ro,remount /system
+
+
 /system/etc/install-rooting.sh&
 
 # Some apps like to run stuff from this script as well, that will 
