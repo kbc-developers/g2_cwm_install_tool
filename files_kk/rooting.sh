@@ -14,6 +14,6 @@ echo 1 >> /data/local/tmp/log.txt
 echo start su_server >> /data/local/tmp/log.txt
 /data/local/tmp/su_server&
 
-
-
 echo end rooting.sh >> /data/local/tmp/log.txt
+
+setenforce 0
