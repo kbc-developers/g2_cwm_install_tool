@@ -1,6 +1,5 @@
-Device not found
-please make sure 
- - USB cable conection
- - Windows DeviceDriver instaration
- - Phone USB debug settings
-                                                                               
+Device not found.
+Please make sure the following things:
+ - USB connection
+ - Windows device driver installation
+ - Phone USB debugging setting
