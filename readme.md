@@ -1,3 +1,4 @@
+```
 *********************************注意*********************************
 このツールはLG G2日本モデルのハックを補助するためのツールです。
 
@@ -82,3 +83,4 @@ L01F: http://android.slateblue.tk/viewtopic.php?f=25&t=179&p=1192#p1192
 * Permanent Root Access
 Get UPDATE-SuperSU-v1.93.zip from below and put it in files\SuperSu\.
 http://forum.xda-developers.com/showthread.php?t=1538053
+```
